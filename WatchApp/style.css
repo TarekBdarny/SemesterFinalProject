@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine&family=Nunito:wght@300&family=Poppins:wght@300&family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(istockphoto-1177016207-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    /* position: relative; */
+    width: 80%;
+    flex-direction: column;
+    transform: translateY(0%);
+    overflow: hidden;
+}
+.glass{
+    background:linear-gradient(rgba(255,255,255,0.1) , rgba(255,255,255,0)) ;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.1) ;
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+}
+.watch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    position: relative;
+    width: 100%;
+    transform: translateY(-50%);
+}
+.time{
+    position: absolute;
+    top:0;
+}
+.lines{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -20px;
+    top: 50%;
+}
+
+.lines img{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    mix-blend-mode: color-burn;
+} 
+.changeBColor{
+    animation: changeBorderColor 4s ease-in forwards;
+    transition: transform 10ms ease-in;
+    
+}
+.lines-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.seconds {
+    width: 10px;
+    height: 250px;
+    z-index: 1;
+     position: absolute;
+     background-color: black;
+     border-top-left-radius: 8px;
+     border-top-right-radius: 8px;
+     border-top: #7C83F3 solid 10px;
+     right: 47%;
+    
+}
+
+
+.dot{
+
+    position: relative;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background: grey;
+    transform: translateX(15%);
+    z-index: 10;
+}
+
+.buttons{
+    
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    position: absolute;
+    top: 80%;
+}
+.buttons button{
+    width: 100px;
+margin: 0 5px;
+background-color: #000;
+color: #7C83F3;
+font-size: 20px;
+border: none;
+outline: none;
+padding: 5px;
+border-radius:5px;
+cursor: pointer;
+transition: all 500ms ;
+}
+.buttons button:hover{
+    transform: scale(1.1);
+    background-color: rgba(0,0,0,0.5);
+}
+
+.laps{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 30px;
+    left: 0;
+    top: 0;
+
+}
+.icon-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 93%;
+    top: 0;
+    left: 25px;
+    position: absolute;
+}
+.icon-container i{
+    cursor: pointer;
+    transition: transform 300ms;
+}
+.icon-container .reset:hover::after{
+    content: "Reset Laps";
+    position: absolute;
+    top: 30px;
+    font-size: .5rem;
+    right: -15px;
+    width: 50px;
+}
+.icon-container .reset{
+display: none;
+}
+.icon-container .fa-xmark:hover::after{
+    content: "Close History";
+    position: absolute;
+    font-size:.5rem ;
+    top: 25px;
+    left: -30px;
+    width: 100px;
+    text-align: center;
+    transition: all 0.3ms ;
+    padding: 4px 0;
+}
+
+
+.laps .fa-list:hover::after{
+    content: "show History";
+    position: absolute;
+    font-size:.5rem ;
+    top: 30px;
+    left: -30px;
+    width: 100px;
+    text-align: center;
+    transition: all 0.3ms ;
+    padding: 4px 0;
+    
+}
+ .laps-wrapper{
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    display: none;
+ 
+}
+
+.laps-wrapper li{
+    list-style: none;
+    padding: 15px;
+
+}
+.showLaps{
+   display: block;
+   -webkit-animation: tilt-in-fwd-tr 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: tilt-in-fwd-tr 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.laps-container{
+    position: absolute;
+    color: black;
+    width: 100%;
+    
+
+
+}
+.laps-container::-webkit-scrollbar{
+position: absolute;
+left: 40;
+z-index: 10;
+}
+.laps-container div{
+    color: #fff;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid #7C83F3 2px;
+    color: black;
+    margin: 20px 0 0 20px;
+
+}
+
+
+.roll-out-blurred-right {
+	        animation: roll-out-blurred-right 0.65s ease-out forwards;
+}
+
+@keyframes changeBorderColor
+{
+    0%{
+        border: solid black 2px ;
+
+    }
+    50%{border: solid blue 2px;}
+    75%{border: solid yellow 2px;}
+    100%{border: solid black 1px;}
+}
+  @keyframes roll-out-blurred-right 
+  {
+   0%{
+    transform: translateX(0%);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+   } 
+   100%{
+    transform: translateX(-100%);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    filter: blur(4px);
+    display: none;
+   }
+  }
+ @-webkit-keyframes tilt-in-fwd-tr {
+    0% {
+      -webkit-transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+              transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+              transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes tilt-in-fwd-tr {
+    0% {
+      -webkit-transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+              transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+              transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+      opacity: 1;
+    }
+  }
+
+  

@@ -1,0 +1,466 @@
+/* if the laptop image wasn't centered just uncomment on the class .footerWrapper the transform property */
+@import url('https://fonts.googleapis.com/css2?family=Domine&family=Nunito:wght@300&family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+:root{
+    --main :#080808 ;
+    --white : #fff;
+    --light-red : #ff004f;
+    --backgrounds : #262626;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    background-color: var(--main);
+    color: var(--white);
+}
+.container{
+    /* height: 100vh; */
+    width: 100%;
+    position: relative;
+}
+
+/* the arrow sticky div */
+.stickyDiv{
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 20px;
+    transform: translateX(95%);
+
+}
+.stickyDiv > div{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: var(--backgrounds);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 300ms;
+}
+.stickyDiv > div:hover{
+    background: var(--light-red);
+}
+
+.stickyDiv > div > img{
+    width: 50px;
+    
+}
+
+/* Navigation bar */
+header{
+    background: var(--main);
+}
+header nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+header nav img{
+    position: absolute;
+    left: 20px;
+    width: 150px;
+
+}
+header nav ul{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    padding:  10px;
+    padding-right: 50px;
+}
+header ul li{
+    list-style: none;
+    margin: 0 10px;
+    padding: 10px;
+    cursor: pointer;
+    color:#fff ;
+}
+header ul li:not(ul:last-child)
+{
+    border-right: solid 3px var(--backgrounds);
+}
+header ul li a {
+    text-decoration: none;
+    color: var(--white);
+    position: relative;
+}
+header ul li a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width:0;
+    height: 3px;
+    background-color: var(--light-red);
+    transition: width 200ms;
+}
+header ul li a:hover::after{
+    width: 100%;
+}
+
+/* what every section in the website should apply these styling */
+section{
+    margin-top: 20px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* about me styling */
+.aboutMeSection .aboutMeContent{
+    padding: 50px;
+    width: 100%;
+    position: relative;
+
+}
+.aboutMeSection h1{
+    position: absolute;
+    top: -150px;
+    left: 0;
+    text-align: center;
+    margin: 20px 0;
+    width: 50%;
+}
+.aboutMeSection h3{
+position: absolute;
+top: -90px;
+
+}
+.aboutMeSection img{
+    position: absolute;
+    right: 100px;
+    top: 20%;
+    transform: translateY(-50%);
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: blue solid 2px;
+    animation: transformImage 4s ease-in-out infinite  ;
+    object-fit: cover;
+}
+.aboutMeFooter{
+    position: absolute;
+    top: -50px;
+    left: 0;
+    padding-left: 33px;
+    height: 100px;
+    width: 95%;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+.aboutMeFooter p{
+    width: 50%;
+    padding: 1rem;
+}
+.contactMe{
+    position: absolute;
+    bottom: -30px;
+    left: 30%;
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contactMe a{
+    width: 50px;
+    height: 50px;
+    background-color:transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+}
+/* the three icons in the about me */
+.contactMe i{
+    font-size: 2rem;
+    color: var(--backgrounds);
+    transform: scale(1);
+    transition: color 200ms , transform 200ms;
+}
+.contactMe i:hover{
+    color: var(--light-red);
+    transform: scale(1.1);
+}
+
+
+
+
+
+/* Skills and incoming skills page styling */
+
+.skills{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    
+}
+.skills div:not(.Skills){
+    position: absolute;
+    top: 50%;
+    display: flex;
+    flex-direction: row;
+
+}
+.skills h1{
+    position: absolute;
+    top: -40px;
+    left: 30px;
+}
+.skills div{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+.skills ul{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    width: 100%;
+    top: 20px;
+
+}
+.skills div ul li{
+    margin:  0 15px ;
+    padding:1rem;
+    position: relative;
+    list-style:none;
+    width:320px;
+    height: 320px;
+    background: var(--backgrounds);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: all 200ms;
+    cursor: pointer;
+    transform: translateY(0px);
+}
+.skills div ul li i{
+    position: absolute;
+    top: 10px;
+    font-size: 2rem;
+    border-radius: 50%;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills div ul li p{
+    position: absolute;
+    bottom: 20px;
+    padding: 10px;
+}
+
+.skills div ul li h2{
+    position: absolute;
+    top: 60px;
+    padding: 10px;
+}
+.skills div ul li:hover{
+    background-color: var(--light-red);
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 5px var(--white);
+
+}
+.skills div ul li:hover i{
+    color: var(--light-red);
+}
+
+
+
+/* the projects section in the website */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin-top: 50px;
+    position: relative;
+}
+.footer h1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 3rem;
+}
+.footerWrapper{
+    position: relative;
+    transition: all 300ms;
+    /* transform:translateX(25%); */
+}
+
+
+
+
+.imagesWrapper > .macBook{
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    background-image: url(Apple\ Macbook\ Pro\ 16\ Space\ Grey.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 300ms;
+
+}
+.footer .ProjectImage{
+position: absolute;
+width: 760px;
+height: 475px;
+object-fit: cover;
+top: 50%;
+left: 50.1%; 
+ transform: translate(-50% , -50%);
+}
+
+
+.footer  .buttons{
+     position: absolute; 
+     top: 50%; 
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.footer .btn{
+    font-size: 2rem;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: var(--backgrounds);
+    z-index: 10;
+    transition: background 200ms;
+    cursor: pointer;
+    
+}
+.footer .btn:hover{
+    background: var(--light-red);
+}
+.footer .content{
+    position: absolute;
+    top: 10%;
+    left: 12%;
+    width: 762px;
+    height: 480px;
+    text-align: center;
+    background: linear-gradient(var(--main) , var(--light-red)) ;
+    opacity: 0;
+    transition: all 300ms ;
+    font-size: 1.1rem;
+    transition: all 200ms;
+}
+.footer .content .demoInfo{
+    position: absolute;
+    width: 300px;
+    top: 100px;
+    left: 0;
+    text-align: start;
+}
+.footer .macBook:hover .content{
+    opacity: 0.7;
+    transition: all 200ms;
+
+}
+.footer .content p {
+    padding: 1rem;
+}
+
+.footer .content a{
+text-align: end;
+padding: 1rem;
+background-color: #262626;
+color: var(--white);
+text-decoration: none;
+width: 50px;
+border-radius: 50%;
+position: absolute;
+right: 10px;
+bottom: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: background-color 300ms;
+}
+.footer .content a:hover{
+    background-color: var(--white);
+    color: var(--light-red);
+
+
+}
+/* animation classes */
+.onHover{
+    transform: scale(0.5)  translateX(70%);
+}
+.slideRight{
+    animation: slideToRight 3s ;
+}
+.slideLeft
+{
+    animation : slideToLeft 3s;
+}
+.slideBackFromRight{
+    animation:slideBackFromRight 2s;
+}
+.slideBackFromLeft{
+    animation:slideBackFromLeft 2s;
+}
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+/* all the animations in the page */
+@keyframes transformImage{
+    0%, 100% {
+        transform: translateY(-50%);
+      }
+      50% {
+        transform: translateY(-57%); /* Move the element 50 pixels up */
+      }
+}
+@keyframes slideToRight{
+   from{
+    transform: translateX(0);
+   }
+   to{
+    transform: translateX(150%);
+   }
+}
+@keyframes slideToLeft{
+    from{
+     transform: translateX(0);
+    }
+    to{
+     transform: translateX(-150%);
+    }
+ }
+ @keyframes slideBackFromRight{
+    from{transform: translateX(150%);}
+    to{transform: translateX(0);}
+ }
+ @keyframes slideBackFromLeft{
+    from{transform: translateX(-150%);}
+    to{transform: translateX(0);}
+ }

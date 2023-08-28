@@ -1,0 +1,171 @@
+{
+    "movies" : [
+        {
+            "name" : "Fast and Furious 9",
+            "release-date" : "2021",
+            "rating" : "5.2",
+            "path" : "./images/img1.jpg",
+            "desc" : "Dom Toretto is living the quiet life off the grid with Letty and his son, but they know that danger always lurks just over the peaceful horizon. This time, that threat forces Dom to confront the sins of his past to save those he loves most. His crew soon comes together to stop a world-shattering plot by the most skilled assassin and high-performance driver they've ever encountered -- Dom's forsaken brother",
+            "category" :"Action"
+        },
+        {
+            "name" : "Game Of Thrones",
+            "release-date" : "2011",
+            "rating" : "9.8",
+            "path" : "./images/img2.jpg",
+            "desc" : "Nine noble families wage war against each other in order to gain control over the mythical land of Westeros. Meanwhile, a force is rising after millenniums and threatens the existence of living men."
+            ,"category" :"Drama"
+
+        },
+        {
+            "name" : "Iron Man 2",
+            "release-date" : "2010",
+            "rating" : "6.9",
+            "path" : "./images/img3.jpg",
+            "desc" : "Tony Stark is under pressure from various sources, including the government, to share his technology with the world. He must find a way to fight them while also tackling his other enemies."
+            ,"category" :"Action"
+
+        },
+        {
+            "name" : "SHAZAM!",
+            "release-date" : "2019",
+            "rating" : "7",
+            "path" : "./images/img4.jpg",
+            "desc" : "After being abandoned at a fair, Billy constantly searches for his mother. His life, however, takes a huge turn when he inherits superpowers from a powerful wizard."
+            ,"category" :"Action"
+        },
+        {
+            "name" : "Avengers Infinity War",
+            "release-date" : "2018",
+            "rating" : "8.4",
+            "path" : "./images/img5.jpg",
+            "desc" : "The Avengers must stop Thanos, an intergalactic warlord, from getting his hands on all the infinity stones. However, Thanos is prepared to go to any lengths to carry out his insane plan."
+            ,"category" :"Action"
+
+        },
+        {
+            "name" : "Black Demon",
+            "release-date" : "2023",
+            "rating" : "3.7",
+            "path" : "./images/img6.jpg",
+            "desc" : "Oilman Paul Sturges' idyllic family vacation turns into a living nightmare when they encounter a gigantic megalodon shark that will stop at nothing to protect its territory. Stranded and under constant attack, Paul and his family must somehow find a way to get back to shore alive before it strikes again."
+            ,"category" :"Mystery"
+
+        },
+        {
+            "name" : "Avatar",
+            "release-date" : "2022",
+            "rating" : "7.6",
+            "path" : "./images/img7.jpg",
+            "desc" : "Avatar is an American media franchise created by James Cameron, which consists of a planned series of epic science fiction films produced by Lightstorm Entertainment and distributed by 20th Century Studios, as well as associated merchandise, video games and theme park attractions."
+            ,"category" :"Mystery"
+
+        },
+        {
+            "name" : "Door Of The Hood",
+            "release-date" : "2006",
+            "rating" : "6.6",
+            "path" : "./images/img8.jpg",
+            "desc" : "Set during the French occupation of Syria, a group of citizens of the Al Dabe' neighbourhood encounter various obstacles during their lives."
+            ,"category" :"Drama"
+
+        },
+        {
+            "name" : "LUCIFER",
+            "release-date" : "2016",
+            "rating" : "8.1",
+            "path" : "./images/img9.jpg",
+            "desc" : "Based on characters created by Neil Gaiman, Sam Kieth and Mike Dringenberg, this series follows Lucifer, the original fallen angel, who has become dissatisfied with his life in hell. After abandoning his throne and retiring to Los Angeles, Lucifer indulges in his favorite things (women, wine and song) -- until a murder takes place outside of his upscale nightclub"
+            ,"category" :"Mystery"
+
+        },
+        {
+            "name" : "The Witcher",
+            "release-date" : "2019",
+            "rating" : "8.1",
+            "path" : "./images/img10.jpg",
+            "desc" : "The witcher Geralt, a mutated monster hunter, struggles to find his place in a world in which people often prove more wicked than beasts."
+            ,"category" :"Drama"
+        },{
+            "name" : "Stranger Things",
+            "release-date" : "2016",
+            "rating" : "8.7",
+            "path" : "./images/img11.jpg",
+            "desc" : "n 1980s Indiana, a group of young friends witness supernatural forces and secret government exploits. As they search for answers, the children unravel a series of extraordinary mysteries."
+            ,"category" :"Drama"
+        },{
+            "name" : "Fake Profile",
+            "release-date" : "2023",
+            "rating" : "5.7",
+            "path" : "./images/img12.jpg",
+            "desc" : "Camila meets her Prince Charming through a dating app; after an idyllic romance, she makes plans to surprise him, only to end up trapped in paradise.",
+            "category" : "Romance"
+
+
+        },{
+            "name" : "Twilight",
+            "release-date" : "2019",
+            "rating" : "4.2",
+            "path" : "./images/img13.jpg",
+            "desc" : "The Twilight Saga is a series of romance fantasy films based on the book series Twilight by Stephenie Meyer. The series has grossed over $3.4 billion worldwide. The first installment, Twilight, was released on November 21, 2008. The second installment, New Moon, followed on November 20, 2009",
+            "category" : "Romance"
+
+        },{
+            "name" : "Red notice",
+            "release-date" : "2021",
+            "rating" : "6.3",
+            "path" : "./images/img14.jpg",
+            "desc" : "In the world of international crime, an Interpol agent attempts to hunt down and capture the world's most wanted art thief.",
+            "category" : "Action"
+
+        },
+        {
+            "name" : "Baby Driver",
+            "release-date" : "2017",
+            "rating" : "7.6",
+            "path" : "./images/img15.jpg",
+            "desc" : "Doc forces Baby, a former getaway driver, to partake in a heist, threatening to hurt his girlfriend if he refuses. But the plan goes awry when their arms dealers turn out to be undercover officers.",
+            "category" : "Action"
+        },
+        {
+            "name" : "Friends",
+            "release-date" : "1994-2004",
+            "rating" : "8.9",
+            "path" : "./images/img16.jpg",
+            "desc" : "Follow the lives of six reckless adults living in Manhattan, as they indulge in adventures which make their lives both troublesome and happening.",
+            "category" : "Comedy"
+        },
+        {
+            "name" : "Wednesday",
+            "release-date" : "2022",
+            "rating" : "8.1",
+            "path" : "./images/img17.jpg",
+            "desc" : "While attending Nevermore Academy, Wednesday Addams attempts to master her emerging psychic ability, thwart a killing spree and solve the mystery that embroiled her parents 25 years ago",
+            "category" : "Action"
+
+        },{
+            "name" : "Bad Boys",
+            "release-date" : "2019",
+            "rating" : "8.1",
+            "path" : "./images/img18.jpg",
+            "desc" : "Bad Boys is a series of American buddy cop action comedy films created by George Gallo. It stars Will Smith and Martin Lawrence as two detectives in the Miami Police Department, Mike Lowrey and Marcus Burnett. Joe Pantoliano and Theresa Randle also appear in all three films",
+            "category" : "Comedy"
+
+        },{
+            "name" : "Central Intelligence",
+            "release-date" : "2016",
+            "rating" : "3.9",
+            "path" : "./images/img19.jpg",
+            "desc" : "Accountant Calvin Joyner's life changes drastically after Bob Stone, his old classmate from high school, drags him into a dubious covert operation.",
+            "category" : "Action"
+
+        },{
+            "name" : "The Girl Next Door",
+            "release-date" : "2004",
+            "rating" : "6",
+            "path" : "./images/img20.jpg",
+            "desc" : "Matthew, a high school senior, thinks that he has found the woman of his dreams. However, he soon learns that Danielle, the object of his affection, is a former adult film actress.",
+            "category" : "Romance"
+        }
+    ]
+}

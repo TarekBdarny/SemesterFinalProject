@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  text-align: center;
+  overflow: hidden;
+  background-color: black;
+ 
+
+}
+.container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding: 10px;
+  border-radius: 20px;
+}
+.container:first-child{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 600px;
+  /* background-color: #fff; */
+  /* From https://css.glass */
+background: rgb(255, 255, 255);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+h2{
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.imagesWrapper
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 550px;
+  height: 260px;
+  border: solid 1px blue;
+  padding: 10px;
+}
+.imagesWrapper img{
+  padding: 10px;
+  width: 240px;
+  height: 240px;
+
+}
+#myImg{
+  border-left: solid 2px black;
+
+}
+#computerImg{
+  border-right: solid 2px black;
+}
+
+.scoreWrapper{
+  width:550px ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  margin-bottom: 10px;
+}
+.scoreWrapper h1{
+  font-size: 20px;
+  margin : 0 10px
+  
+}
+.imgWrapper {
+  width: 400px;
+  height: 90;
+  margin-top: 20px;
+  margin: 0 auto;
+  margin-top: 30px;
+
+}
+.imgWrapper img 
+{
+  width: 90px;
+  height: 90px;
+  margin: 0 20px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 100ms;
+}
+.imgWrapper img:hover{
+  transform: scale(1.1);
+  background-color: black;
+}

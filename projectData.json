@@ -1,0 +1,26 @@
+{
+    "projects": [
+    {
+        "image" : "Watch app.png",
+        "desc" : "A simple watch application that show times based on seconds and milliseconds with a custom clock dial with a laps history .",
+        "link" : "/WatchApp/watch.html"
+    },
+    {
+        "image" : "movie-project.png",
+        "desc" : "A movie app that shows details of a movie thats on the project with the ability to search for it and a category that you can use to select specific movies. To access the movie app you need to sign in , also you can use the demo account for a fast sing in ",
+        "link" : "/movieApp/register/register.html",
+        "email" : "Demo@example.com",
+        "password" : "Demo123"
+    },
+    {
+        "image" : "ToDoApp.png",
+        "desc" : "A To Do App that takes your To Do and append it to the application. It also have the ability to check a certain To Do and delete it ",
+        "link" : "/ToDoList/TODO.html"
+    },
+    {
+        "image" : "RockPaperScissors.png",
+        "desc" : "A famous Game Rock Paper Scissors that you play with the computer and the winner the one who gets the most points.",
+        "link" : "/RockPaperScissors/index.html"
+    }
+    ]
+}
