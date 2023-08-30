@@ -1,8 +1,10 @@
 Hello Aisam,
 I am Tarek Bdarny presenting this project alone.
 ID : 325347086
-This project is a portfolio website that contain all the projects we did in the class but i refactor them to be with more functional
+This project is a portfolio website that contain all the projects we did in the class but i refactor them to be more functional
 1) digital clock that count time based on seconds
 2) a movie app with new function like search...
 3) a to do list with the ability to delete and check a todo
 4) a Rock papaer scissors game against the computer.
+You can also see the website on github with the link => https://github.com/TarekBdarny/SemesterFinalProject
+You can downlaod the file from github in zip file or see them in google dirve 
