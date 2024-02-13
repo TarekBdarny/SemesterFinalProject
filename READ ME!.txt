@@ -8,3 +8,5 @@ This project is a portfolio website that contain all the projects we did in the 
 4) a Rock papaer scissors game against the computer.
 You can also see the website on github with the link => https://github.com/TarekBdarny/SemesterFinalProject
 You can downlaod the file from github in zip file or see them in google dirve 
+When you decide to download the file make sure to start the live server with the main.html file in the semesterFilnalProject Folder
+Have a good day!
